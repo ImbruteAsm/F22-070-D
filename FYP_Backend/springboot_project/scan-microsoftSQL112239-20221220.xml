@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Dec 20 11:22:39 2022 as: nmap -p 1433,4022,135,1434 -&#45;script=ms-sql-info -oX scan-microsoftSQL112239-20221220.xml https://www.filllpg.co.uk/?page=lpg.php%27 -->
+<nmaprun scanner="nmap" args="nmap -p 1433,4022,135,1434 -&#45;script=ms-sql-info -oX scan-microsoftSQL112239-20221220.xml https://www.filllpg.co.uk/?page=lpg.php%27" start="1671517359" startstr="Tue Dec 20 11:22:39 2022" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="135,1433-1434,4022"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<target specification="https://www.filllpg.co.uk/?page=lpg.php%27" status="skipped" reason="invalid"/>
+<runstats><finished time="1671517361" timestr="Tue Dec 20 11:22:41 2022" elapsed="1.82" summary="Nmap done at Tue Dec 20 11:22:41 2022; 0 IP addresses (0 hosts up) scanned in 1.82 seconds" exit="success"/><hosts up="0" down="0" total="0"/>
+</runstats>
+</nmaprun>
