@@ -1,0 +1,26 @@
+[
+    {
+        "Severity":"High Risk",
+        "Category":"SSL/TLS",
+        "Notice":"Server supports one or more insecure SSL protocols",
+        "Hosts":"6 Hosts"
+    },
+    {
+        "Severity":"High Risk",
+        "Category":"Mail/DNS",
+        "Notice":"No DMARC record found",
+        "Hosts":"1 Hosts"
+    },
+    {
+        "Severity":"Medium Risk",
+        "Category":"SSL/TLS",
+        "Notice":"Weak cipher suits detected",
+        "Hosts":"6 Hosts"
+    },
+    {
+        "Severity":"High Risk",
+        "Category":"SSL/TLS",
+        "Notice":"Weak Handshake Mechanism",
+        "Hosts":"1 Hosts"
+    }
+]

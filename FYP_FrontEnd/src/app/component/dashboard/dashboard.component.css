@@ -1,0 +1,125 @@
+mat-sidenav{
+    background-color: #0f172a;
+    width: 230px;
+    height: 100%;
+}
+
+mat-sidenav-content{
+    height: 100vh;
+    background-color: white;
+    
+}
+.main{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+mat-toolbar{
+    color:gray;
+    justify-content: space-between;
+}
+.mat-icon{
+    margin-left: 30px;
+    color:gray;
+}
+.box{
+    margin-top: 15px;
+}
+
+.host {
+    height: 100%;
+    width: 100%;
+}
+
+.line-chart {
+    height: 92%;
+    width: 98%;
+    float: center;
+}
+.pie{
+    padding-top: 42px;
+
+}
+.linechart{
+    margin-top: -392px;
+    margin-left: 334px;
+    padding-top:32px;
+}
+
+.Icon{
+    color:  white;
+    border: 2px;
+    border-style:solid;
+    border-radius: 9px;
+    height: 72px;
+    width: 55px;
+    padding-left: 18px;
+    font-size: 55px;
+    shape-outside: margin-box;
+    margin-left: 15px;
+    margin-top: 6px;
+    
+}
+h2{
+    margin-left: 99px;
+    margin-top: -69px;
+}
+h3{
+    margin-top: -10px;
+    margin-left: 99px;
+}
+
+tr{
+    border-radius: 20px;
+    border: 1px solid;
+
+}
+
+table{
+    width: 1250px;
+    height: 200px;
+    text-align: justify;    
+}
+
+thead{
+    box-shadow: 0 0.2px 0.3px;
+    border-collapse: collapse;
+    font-size: 190px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #71737c;
+}
+th{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+td{
+    box-shadow: 0 0.2px 0.3px;
+
+    padding: 1rem 2rem;
+}
+
+.sev{
+    background-color:rgb(203, 101, 101);
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+}
+
+.cat{
+    color: rgb(51, 135, 174);
+    cursor: pointer;
+}
+.host{
+    background-color:rgb(196, 238, 233);
+    color: rgb(66, 105, 123);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-weight: 580;
+}

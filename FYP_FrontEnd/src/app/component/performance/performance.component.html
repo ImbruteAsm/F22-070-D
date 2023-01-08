@@ -1,0 +1,54 @@
+<body>
+    <div class="score-perf">
+        <mat-card class="card1" style="margin-left: 25px; width: 915px;height: 440px;">
+            <mat-card-content style="margin-top: -40px;">
+                            <h1 class="t1">Score Performance</h1>
+                        <div class="bar-chart">
+                            <div echarts [options]="performance"></div>
+                            </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card2" style="margin-top:-438px;margin-left: 975px; width: 515px;height: 440px;">
+            <mat-card-content style="margin-top: -40px;">
+                            <h1 class="t2">Category Grades</h1>
+                        <div class="tab">
+                            <mat-icon class="Icon1">A</mat-icon>
+                            <a class="r">Endpoint Security</a>
+                            </div>
+                            <div class="tab">
+                                <mat-icon class="Icon2">B</mat-icon>
+                                <a class="r">Business Reputation</a>
+                                </div>
+                                <div class="tab">
+                                    <mat-icon class="Icon2">D</mat-icon>
+                                    <a class="r">Database Servers</a>
+                                    </div>
+                                    <div class="tab">
+                                        <mat-icon class="Icon2">C</mat-icon>
+                                        <a class="r">Cyber Attacks</a>
+                                    </div>
+                                    <div class="tab">
+                                    <mat-icon class="Icon1">M</mat-icon>
+                                    <a class="r">Mail/DNS</a>
+                                    </div>
+                                    <div class="tab">
+                                        <mat-icon class="Icon2">M</mat-icon>
+                                        <a class="r">Malware</a>
+                                        </div>
+                                    <div class="tab">
+                                    <mat-icon class="Icon2">N</mat-icon>
+                                    <a class="r">Network Security</a>
+                                    </div>
+                                        <div class="tab">
+                                        <mat-icon class="Icon1">S</mat-icon>
+                                        <a class="r">SSL/TLS</a>
+                                        </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!--<mat-card class="card2" style="margin-top:20px;margin-left: 25px; width: 1470px;height: 640px;">
+        
+        </mat-card>-->
+
+    </div>
+</body>

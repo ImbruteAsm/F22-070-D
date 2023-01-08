@@ -1,0 +1,28 @@
+<div class="navbar">
+    <div class="top">
+        
+    </div>
+    <div class="menu" >
+        <div class="menu-head">
+            <button [routerLink]="['/dashboard']" mat-button class="menu-button">
+                <a class="dashboard-heading">Dashboard</a>
+            </button>
+            <br/><br/>
+        </div>
+        <div class="menu-item">
+           <button [routerLink]="['/riskcategories']" mat-button class="menu-button">
+                <mat-icon>list</mat-icon>
+                <a class="risk">Risk Categories</a>
+            </button>
+            <button [routerLink]="['/performance']" mat-button class="menu-button">
+                <mat-icon>timeline</mat-icon>
+                <span class="risk">Performance</span>
+            </button>   
+            <button [routerLink]="['/']" mat-button class="menu-button">
+                <mat-icon>input</mat-icon>
+                <span class="risk">Input Domain</span>
+            </button> 
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(241, 239, 239);
+    height:1250px;
+}
+.t1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.score-perf{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.card1{
+    border-radius: 8px;
+}
+.bar-chart{
+    padding-top: -200px;
+    padding-left: -20px;
+    margin-left: -20px;
+    margin-right: -30px;
+}
+.t2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.tab{
+    padding-left: 10px;
+}
+.r{
+    padding-top:14px;
+    font-size: 19px;
+    margin-left: 15px;
+    position: absolute;
+    color:rgb(41, 112, 146);
+}
+
+.Icon1{
+    color: white;
+    border-radius: 49px;
+    height: 28px;
+    width: 21px;
+    padding-left: 6px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: rgb(209, 241, 112);
+}
+.Icon2{
+    color: white;
+    border-radius: 49px;
+    height: 28px;
+    width: 21px;
+    padding-left: 6px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  background-color: rgb(130, 228, 196);
+}
