@@ -1,5 +1,7 @@
 package com.example.riskfactors.utils;
 
+import org.apache.kafka.common.protocol.types.Field;
+
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -24,6 +26,12 @@ public class Constants {
             {"vnc", "nmap --script=vnc-info -oX "},
     }).collect(Collectors.toMap(data -> data[0], data -> data[1]));
 
+    public static final String DETECTEDDEVICES_CMD = "nmap -sn %s -oX %s > /dev/null";
+
+    public static final String OPERATINGSYSTEM_CMD = "sudo nmap -O %s -oX %s > /dev/null";
+
+
+    public static final String SERVICE_CMD = "nmap -sV %s -oX %s > /dev/null";
 
     public static final String SSL_CMD = "python3 ./ssl-checker/ssl_checker.py -H  %s -a -j > %s";
     public static final String SSH_CMD = "python3 ./ssh-audit-2.5.0/ssh-audit.py %s -j > %s";
