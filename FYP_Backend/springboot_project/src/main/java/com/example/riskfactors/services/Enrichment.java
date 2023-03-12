@@ -29,6 +29,8 @@ public class Enrichment {
     private RiskFactorsRiskNumberCalculation riskFactorsRiskNumberCalculation;
     @Autowired
     private NetworkDiscovery networkDiscovery;
+    @Autowired
+    private EndpointDetection endPointDetection;
     @Value("${X-OTX-API-KEY}")
     private String apiKey;
     @Value("${NMAP-BASE-PATH}")
@@ -42,7 +44,8 @@ public class Enrichment {
             DNSHealth dnsHealthFactors = gatherDataDNSHealth(target);
             IpReputation ipReputation = gatherDataIpReputation(target);
             ApplicationSecurity applicationSecurity = gatherDataApplicationSecurity(target);
-            riskFactors = new RiskFactors(networkSecurityFactors, dnsHealthFactors, applicationSecurity, ipReputation);
+            EndpointSecurity endpointSecurity = gatherEndpointSecurity(target);
+            riskFactors = new RiskFactors(networkSecurityFactors, dnsHealthFactors, applicationSecurity, ipReputation,endpointSecurity );
             riskFactors.setTarget(target);
             riskFactors = riskFactorsRiskNumberCalculation.calculateRiskNumber(riskFactors);
             return riskFactors;
@@ -50,6 +53,25 @@ public class Enrichment {
         //return riskFactors;
     }
 
+    private EndpointSecurity gatherEndpointSecurity(String target){
+    System.out.println("in the function");
+        try {
+            System.out.println("in the function try area11");
+            //String working = this.endPointDetection.detectEndpoint(target);
+            Devices devices = this.endPointDetection.discoverdDevices(target);
+            List<Services> services = this.endPointDetection.detectServices(target);
+            List<OperatingSytem> operatingSytems = this.endPointDetection.detectOperatingSystem(target);
+           // String yes = "os variable working";
+            System.out.println("in the function try area22");
+            EndpointSecurity endpointSecurity = new EndpointSecurity(devices,services,operatingSytems);
+            System.out.println("in the function try area");
+            return endpointSecurity;
+        }
+        catch(Exception e){
+            log.error("It aint working",e);
+        }
+        return null;
+    }
     private NetworkSecurityFactors gatherDataNetworkSecurity(String target) {
         NetworkSecurityFactors networkSecurityFactors = new NetworkSecurityFactors();
         try {
