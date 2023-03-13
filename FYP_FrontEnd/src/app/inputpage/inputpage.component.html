@@ -7,12 +7,12 @@
         <div class="content">
             <div class="toolbar">
                 <mat-toolbar>
-                        <mat-icon (click)="sidebar.toggle()">menu</mat-icon>
+                        <mat-icon [routerLink]="['/performance']" class="perf">vrpano</mat-icon>
                         <span class='dashtoolbar'>Dashboard</span>
-                        <span class='dashtoolbar'>ImbruteASM</span>
+                        <!--<mat-icon (click)="sidebar.toggle()">menu</mat-icon>-->
 
                         <div class="dropdown">
-                            <button class="dropbtn">Categories</button>
+                            <button class="dropbtn">Categories Menu</button>
                                 <div class="dropdown-content">
                                 <a href="#">Endpoint Security</a>
                                 <a href="#">Business Reputation</a>
@@ -35,26 +35,32 @@
         <body>
             <div class="chart-cards">
                 <div class="pie-div">
-                    <mat-card class="card1 mat-elevation-z4" style=" width: 475px;height:590px">
-                        <mat-card-content style="margin-top: -40px;">
-                        <h3 class="dom" style="margin-left:120px">ImbruteAsm</h3>
-                            <h3 class="dom" style="margin-top:-86px;">Enter domain:</h3>
+  
+
+                        <h3 class="domtitle">ImbruteASM</h3>
+                        <h3 style="margin-top:-90px;font-size: 31px;">Online Vulnerability Scanner</h3>
+                        <h3 class="dom" style="margin-top:-16px;font-size: 31px;">Enter domain:</h3>
                         <div class="inp">
-                        <input type="text" id="website" name="website">
-                            <button class="website_bt" [routerLink]="['/dashboard']"><b>GO</b></button>
+                        <input type="text" style="padding-right: 60px;margin-left: 20px;" id="website" #box name="website">
+                            <button class="website_bt" (click)="getVal(box.value)"  [routerLink]="['/listvulnerabilities']"><b>Scan ></b></button>
+                            <br>
+                            
                         </div>
-                        </mat-card-content>
-                    </mat-card>
+                        <div>
+                          <!--  <img alt="My image name" src="./../../../../assets/InputPicture.jpeg">-->
+                          <img class="pic" [src]="pic1">
+                    </div>
+
                 </div>
                 
-                    <mat-card class="card2 mat-elevation-z4" style=" width: 927px;height:390px;">
+             <!--      <mat-card class="card2 mat-elevation-z4" style=" width: 927px;height:390px;">
                         <mat-card-content style="margin-top: -30px;">
                         <h3 class="dom_para">Website Vulnerability Testing is a proactive method of locating network, application, and security flaws is vulnerability scanning. The IT department of an enterprise or a third-party security service provider often does vulnerability scanning. Attackers that are looking for ways of access into your network may also do this scan.</h3>
                         
                         <h3 class="dom_para" style="margin-top:-30px">Networks, communications devices, and computers are all subject to the scanning process, which involves identifying and categorising system vulnerabilities. The vulnerability assessments not only pinpoint security gaps but also forecast how successful defences would be in the event of a threat or attack.</h3>
                         </mat-card-content>
                     </mat-card>
-                
+                --> 
                                      
                         
              </div>  
