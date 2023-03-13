@@ -9,6 +9,11 @@ mat-sidenav-content{
     background-color: white;
     
 }
+
+.perf{
+  margin-left: -30px;
+} 
+
 .main{
     margin-left: 30px;
     margin-top: 15px;
@@ -17,6 +22,10 @@ mat-sidenav-content{
 mat-toolbar{
     color:gray;
     justify-content: space-between;
+    
+    position: relative;
+    box-shadow: 2px 0.5px 6px rgb(120, 116, 116);
+
 }
 .mat-icon{
     margin-left: 30px;
@@ -74,7 +83,7 @@ h2{
     margin-top: -69px;
 }
 h3{
-    margin-top: -10px;
+    margin-top: 5px;
     margin-left: 99px;
 }
 
@@ -144,9 +153,14 @@ td{
     border-radius: 40px;
   }
   
+  .dashtoolbar{
+    margin-left: -1 0px;
+  }
+
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 730px;
   }
   
   .dropdown-content {
@@ -178,33 +192,60 @@ td{
     background-color: #f1f1f1;
   }
 
-
+  .pic{
+    height: 917px;      
+    width: 669px; 
+    margin-top: -450px;
+    margin-left: 620px;
+    opacity: 0.85;
+  }
+  .domtitle{
+    padding-top: 220px;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 124px;
+    margin-top: 20px;
+    color:#323131;
+    opacity: 0.9;
+  }
   .dom{
-    padding-top: 90px;
-    font-size: 37px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 10px;
+    padding-top: 210px;
+    padding-left: 94px;
+    font-size: 31px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 20px;
+    color:#323131;
     padding-bottom: 20px;
   }
+
   input[type=text]:focus {
     border: 3px solid #555;
     box-shadow: 0 0.2px 0.3px;
     height: 50px;
-    width:200px;
+    
     position: absolute;
     font: 30px;
   }
   .inp{
     padding-left: 20px;
+    margin-top: -20px;
+    margin-left: 70px;
   }
   .website_bt{
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 50px;
+    margin-left: 90px;
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    background-color: rgb(147, 174, 223);
+    border-color: white;
+
+    border-radius: 6px;
     z-index: 100;
+  }
+  .website_bt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14),0 10px 30px 0 rgba(0,0,0,0.19);
   }
   .dom_para{
     padding-top: 40px;
@@ -215,8 +256,8 @@ td{
     text-align: justify;
   }
   body{
-    background-color: rgb(208, 191, 223);
+    background-color: rgb(190, 213, 241);
     
-    margin-top: -20px;
-    height:750px;
+    margin-top: -50px;
+    height:950px;
   }
